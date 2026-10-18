@@ -1,0 +1,9 @@
+{
+  "input_files": 12,
+  "raw_rows": 6024,
+  "accepted_rows": 5916,
+  "quarantined_rows": 96,
+  "duplicate_rows": 12,
+  "sales_total_cny": "4627984.60",
+  "reconciled": true
+}

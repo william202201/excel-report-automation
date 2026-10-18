@@ -1,0 +1,24 @@
+{
+  "scope": "in-process input read + cleaning + aggregation + xlsx/csv/html/json output; excludes interpreter/import startup and fixture generation",
+  "python": "3.12.14",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "runs_seconds": [
+    6.3753,
+    6.5008,
+    6.4998,
+    6.607,
+    6.4217
+  ],
+  "median_seconds": 6.4998,
+  "metrics": {
+    "input_files": 12,
+    "raw_rows": 6024,
+    "accepted_rows": 5916,
+    "quarantined_rows": 96,
+    "duplicate_rows": 12,
+    "sales_total_cny": "4627984.60",
+    "reconciled": true
+  },
+  "manual_minutes": null,
+  "manual_note": "No manual baseline was measured. Do not claim 80 minutes saved."
+}

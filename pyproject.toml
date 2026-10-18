@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "excel-report-automation"
+version = "1.0.0"
+description = "Auditable Excel consolidation, cleaning and reporting CLI"
+requires-python = ">=3.11"
+dependencies = ["pandas>=2.2,<3", "openpyxl>=3.1,<4"]
+license = "MIT"
+
+[project.scripts]
+excel-report = "excel_report.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["excel_report*"]
+
+[tool.setuptools.package-data]
+excel_report = ["schema.json"]
