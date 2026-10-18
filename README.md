@@ -68,7 +68,6 @@ python -m unittest discover -s tests -v
 
 基准计时涵盖读取、清洗、聚合及 XLSX/CSV/HTML/JSON 写出，排除 Python 启动、依赖导入和示例生成。记录 Python、平台、数据规模、每次耗时及中位数；不同电脑会变化。完整终端命令耗时会更长。
 
-**没有测量“手工约 80 分钟”，也不保证固定“3 秒”。** 简历可引用自己的测试环境与实际计时，不能将估算写为实测。
 
 ## 工程结构
 
@@ -80,7 +79,7 @@ excel_report/cli.py        命令行与重复基准
 examples/input/            可直接运行的原始样例
 examples/output/           已生成的结果，供 GitHub 下载查看
 tests/                    清洗、冲突、金额、输出和注入防护测试
-docs/interview.md          简历表述和面试演示提纲
+docs/walkthrough.md        演示步骤与设计取舍
 ```
 
 GitHub Actions 在 Python 3.11/3.13 运行测试和完整演示，并上传报表产物。大数据量尚未做压力测试；读表采用流式读取，但有效明细和 DataFrame 仍在内存中。
